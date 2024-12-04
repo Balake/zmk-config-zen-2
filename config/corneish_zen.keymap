@@ -65,10 +65,10 @@
 
         raise_layer {
             bindings = <
-&bootloader  &trans  &trans  &trans  &trans        &trans          &trans  &trans          &kp UP_ARROW    &trans     &trans  &trans
-&trans       &trans  &trans  &trans  &trans        &trans          &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
-&trans       &trans  &trans  &trans  &bt BT_SEL 1  &bt BT_SEL 0    &trans  &trans          &trans          &trans     &trans  &trans
-                             &trans  &trans        &trans          &trans  &trans          &trans
+&bootloader  &sys_reset  &trans  &trans  &trans        &trans          &trans  &trans          &kp UP_ARROW    &trans     &sys_reset  &bootloader
+&trans       &trans      &trans  &trans  &trans        &trans          &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans      &trans
+&trans       &trans      &trans  &trans  &bt BT_SEL 1  &bt BT_SEL 0    &trans  &trans          &trans          &trans     &trans      &trans
+                                 &trans  &trans        &trans          &trans  &trans          &trans
             >;
         };
     };
